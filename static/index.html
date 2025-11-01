@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Touchpad with Device Keyboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <input type="text" id="keyboard-input" placeholder="Tap here to type">
+    <div class="container">
+        
+        <div class="screen">
+            <img id="screen" src="http://192.168.0.11:8000/stream" style="max-width: 800px; border: 1px solid black;">
+            
+        </div>
+        <div class="control">
+            <div id="touchpad"></div>
+            <div class="button-container">
+                <button class="click-btn" id="left-click">Left Click</button>
+                <button class="click-btn" id="right-click">Right Click</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="coords">X: 0, Y: 0</div>
+    <script src="/static/touchpad.js"></script>
+</body>
+
+</html>
